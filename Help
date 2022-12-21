@@ -1,0 +1,5 @@
+2022-12-20 21:58:29.5414464 [W:onnxruntime:, inference_session.cc:490 onnxruntime::InferenceSession::RegisterExecutionProvider] Having memory pattern enabled is not supported while using the DML Execution Provider. So disabling it for this session since it uses the DML Execution Provider.
+Traceback (most recent call last):
+  File "C:\Stable Diffusion\t2i.py", line 14, in <module>
+    image = pipe(prompt, strength=denoiseStrength, num_inference_steps=steps, guidance_scale=scale).images[0]
+TypeError: OnnxStableDiffusionPipeline.__call__() got an unexpected keyword argument 'strength'
